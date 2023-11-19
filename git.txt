@@ -1,0 +1,4 @@
+PARA MANDAR LOS ARCHIVOS CADA VEZ:
+git add .
+git commit -m "el commit que sea"
+git push origin main (para mandar los archivos)
