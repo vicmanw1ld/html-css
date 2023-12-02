@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <!-- Inserto el código UTF-8 para indicar la codificación de caracteres 
+            que se utiliza en el documento HTML -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>UNIR</title>
-       
+        <!-- la siguiente etiqueta indica cómo debe renderizar el contenido de la
+             página web en el dispositivo del usuario -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNIR Página principal</title>
     </head>
     <body bgcolor="#006C8F">
         <table border=2 align="center" cellspacing=1 cellpadding=1 width =1000px height=720px >
+            <!-- (THEAD) Uso el encabezado cuerpo (tbody) y pie (tfoot) para estructurar cada una por su lado
+            y así hacer el código más legible y cómodo a la hora de hacer cambios-->
             <thead  bgcolor="#B8860B" >
                 <tr>
+                    <!-- Aquí el titulo lo divido en dos partes una de ellas lleva el logo de UNIR, de 200x200 
+                    así mismo al pulsar la foto te lleva a la página principal, he usado la propiedad title
+                    para que al pasar por encima con el ratón te diga a donde te lleva -->
                     <td bgcolor="#fffff"><a href="index.html" ><img src="icon/unir logo.png" title="PÁGINA PRINCIPAL" width="200px" height="200px" ></a></td>
+                    <!-- en esta he utitilizado 6 espacios en la fila para meter el título, en las propiedades 
+                    le digo que sea la letra arial, de color blaco y de tamaño 22px -->
                     <td align="center" rowspan="6">
-                        <h1><font color="#fffff" face="arial">UNIR FP <br>Tu mejor elección</font><br></h1>
+                        <h1><font face="arial" color="#fffff" size="22px">UNIR FP <br>Tu mejor elección</font><br></h1>
                     </td>
                 </tr>
             </thead>
-            <tbody bgcolor="B8860B">
+            <!-- BODY  en el tbody le indico el color que quiero para todo el fondo de la página-->
+            <tbody bgcolor="#B8860B"> 
                 <tr >
+                    <!-- Aquí inserto los iconos, el espacio que resevo para cada uno es de 100x100 uso figure y 
+                    caption para agrupar contenido multimedia, como estos iconos y proporcionar un título para ese 
+                    contenido. -->
                     <td width="100px" height="100px">
                         <figure align="center">
-                            <img src="icon/quienes somos.png" width="48px" height="48px" >
+                            <a href="quienesSomos.html"><img src="icon/quienes somos.png" width="48px" height="48px" ></a>
                             <figcaption><font color="#fffff">QUIENES SOMOS</font></figcaption>
                         </figure>
-
                     </td>
+                    <!-- Dejo espacio suficiente para colocar el video de youtube -->
                     <td rowspan="5" align="center">
                     <!-- Hay que poner un video de YouTube embebido en una web porque es la forma más sencilla y 
                     rápida de añadir un video a una página web. 
@@ -36,21 +50,21 @@
                 <tr>
                     <td>
                         <figure align="center">
-                            <img src="icon/titulaciones.png" width="48px" height="48px" >
+                            <a href="titulaciones.html"><img src="icon/titulaciones.png" width="60px" height="60px"></a>
                             <figcaption><font color="#fffff">TITULACIONES</font></figcaption>
                         </figure>
                     </td>
                 </tr>
                     <td>
                         <figure align="center">
-                            <img src="icon/profesorado.png" width="48px" height="48px" >
+                            <a href="profesorado.html"><img src="icon/profesorado.png" width="48px" height="48px" ></a>
                             <figcaption><font color="#fffff">PROFESORADO</font></figcaption>
                         </figure>
                     </td>
                 <tr>
                     <td>
                         <figure align="center">
-                            <img src="icon/calendario.png" width="48px" height="48px" >
+                            <a href="horarios.html"><img src="icon/calendario.png" width="48px" height="48px" ></a>
                             <figcaption><a href="horarios.html"><font color="#fffff">HORARIOS</font></a></figcaption>
                         </figure>
                     </td>
@@ -58,15 +72,13 @@
                 <tr>
                     <td>
                         <figure align="center">
-                            <img src="icon/maps.png" width="48px" height="48px" >
-                            <figcaption><a href=""><font color="#fffff">DONDE ESTAMOS</font></a></figcaption>
+                            <a href="ubicacion.html"><img src="icon/maps.png" width="48px" height="48px" ></a>
+                            <figcaption><a href="ubicacion.html"><font color="#fffff">DONDE ESTAMOS</font></a></figcaption>
                         </figure>
                     </td>
                 </tr>
-                
-                
             </tbody>
-            
+            <!-- FOOTER -->
             <tfoot >
                 <table border="1"  bgcolor="#383636" cellpadding=0 cellspacing=0 width =1000px height=20px align="center">
                     <tr>
@@ -77,7 +89,6 @@
                     </tr>
                 </table>
             </tfoot>
-
-
+        </table>        
     </body>
 </html>
