@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ES">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Divs</title>
+   </head>
+   <body>
+    <div>
+        <p>El div es una caja, gracias a el podemos crear cajas rectangulares e identificar de manera exclusiva 
+            un apartado del documento
+        </p>
+        <p>Esto se hace a través de de un código de identificación, el atributo id="comentarios" y se referencia en css como #comentarios{}  </p>
+        <p>a parte también tenemos class="" que se asocia a varios elementos, que recopila todas las caracteristicas que quieras
+            como por ejemplo asociar p em y img con los mismos colores, letra, background etc. class="comentarios" y se referencia en css 
+            con .laClaseQueSea{}
+        </p>
+        <p>así podemos estructurar una página como ejemplo:
+            header div id="header"
+            article div id="article"
+            nav div id="nav"
+            footer div id="footer"
+        </p>
+        <p>span <pre>trabajan como contenedor en linea </pre>
+        div <pre>trabaja en bloque y se pueden meter dentro de él los span</pre>
+        div <pre>maquetación web para crear la estructura, crear contenido flotante, se ajusta muy bvien al css float
+            contenedor de más contenedores, para guardar más información en esas cajas.
+        </pre></p>
+        <p>en html5 ya están las porpias como header nav article section aside footer  <b>ya no hace falta tanto div</b></p>
+        <img src="img/estructura-de-una-pagina-en-HTML5.jpg" alt="" width="500px" height="500px">
+        <p><b>article</b> sirve para meter artículos
+        <b>section</b> sirve para secciones <br>
+        <b>nav</b> para navegadores los tipicos de los 3 puntitos <br>
+        <b>aside</b> sirve para meter videos fotos para elementos secundarios como banners o publicidad <br>
+        <b>header </b>que es la cabecera <br>
+        <b>footer</b> que es el pie <br>
+        <b>main</b> es una etiqueta de bloque <br>
+        </p>
+        <p>Mejora la legibilidad, es reutilizable, incluye etiquetas de video y audio de manera más efciciente, 
+            incluye la etiqueta canvas que permite hacer dibujos sobre la página web,
+            elimina etiquetas obsoletas.
+        </p>
+        <h3>etiqueta nav</h3>
+        <img src="img/NAV.png" alt="NAV" width="700px" height="500">
+        <p>Representa una sección del documento que contiene navegación</p>
+        <img src="img/seccion y article.png" alt="seccion y article" width="700px" height="500px">
+        <p> seccion agrupa la parte principal del documento
+        como si fueran noticias 
+        
+        </p>
+        <footer>
+            <p>La etiqueta address es para por ejemplo el footer poner el pie como esto:</p>
+            <address>Victor anton <br> estudiante de ASIR</address>
+        </footer>   
+        <h1>LISTAS</h1>
+        En html5 hay 3 tipos de listas:
+        <ul>
+            <li><b>Listas ordenadas (ol) <br> Orderer list</b></li>
+            <li>Listas desordenadas (ul) <br> y son listas que no van numeradas <br> unorderer list </li>
+            <li>Listas de definición (dl) <br> definition list </li>
+        </ul>
+        <ul>
+            <ol> ol lista ordenada</ol>
+            <ul> ul Lista desordenadas </ul>
+            <dl>dl lista de definición</dl>
+        </ul>
+        dentro de un elemento lista podemos insertar cualquier tipo de elemento, tables, audio, video, listas <br>
+        Por lo que se pueden combinar listas ordenadas con desordenadas y con lo que sea
+        <h2>LISTAS ORDENADAS</h2>
+        La estructura es:
+        <ul>
+            <li>La LISTA ESTÁ FORMADA por la apertura y cierre ol</li>
+            <li>Internamente dispondra de li en la que se puede listar el contenido <br>
+            pondremos los elementos que queremos que se muestren</li>
+            <li>La etiquete li irá siempre tanto en listas ordenadas con desordenadas</li>
+        </ul>
+        <p>Para vsc se puede poner así ol>li*4 y te sale todo ordenadito</p>
+        <ol type="I" start="I">
+            <li>Windows 11</li>
+            <li>Ubuntu</li>
+            <li>Kali Linux</li>
+            <li>MacOs Yosemite</li>
+        </ol>
+        <ul type="square">
+            <li>Java</li>
+            <li>Php</li>
+            <li>Python</li>
+        </ul>
+        <h2>Listas de definición</h2>
+        <ul>
+            <dl>Tienen la etiqueta dl: delimita la lista completa</dl>
+            <dl>dt: description Term delimitar el término </dl>
+            <dl>dd: definition description delimitar las definiciones</dl>
+
+        </ul>
+        <br><b>ejemplo de lista de definición</b> <br>
+        <dl>
+            <dt><b> dl</b></dt>
+                <dd>dd crea la caja que contiene los items de la lista</dd>
+            <dt><b>dt</b></dt>
+                <dd>Es el item que contiene un término a definir</dd>    
+            <dt><b>dd</b></dt>
+                <dd>Es el item que contiene una definición</dd>    
+                 
+        </dl>
+        <h2>Listas anidadas</h2>
+        Se pueden anidar los tipos de listas convinando listas ordenadas <br>
+        con desordenadas: <br>
+        <font color="red">Suelen emplearse listas anidadas hasta un tercer nivel <br></font>
+        <ul>
+            <li> CSGS ASIR
+                <ol>
+                    <li> Fundamentos de Hardware / Sistemas Informáticos
+                        <ul type="square">
+                            <li>Cambios de base: binario, octal, hexadecimal</li>
+                            <li>Sistmeas Microinformáticos</li>
+                            <li>Virtualización, y RAID</li>
+                        </ul>
+                    </li>
+                </ol>
+                <ol start="2">
+                    <li> Lenguaje de marcas
+                        <ul type="square">
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </li>
+        </ul>
+    </div>
+   </body>
+
+</html>

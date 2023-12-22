@@ -1,53 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="ES">
     <head>
-        <meta charset=""utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <tittle>Hola que ase</tittle>
+        <tittle><h1>Teoria sobre etiquetas 2</h1></tittle>
+        <style>
+            p {
+              line-height: 1.5;
+              font-size:x-large;
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            em {
+                line-height: 1.5;
+                font-size:x-large;
+            }
+            ul{
+                line-height: 1.5;
+                font-size:x-large;
+            }
+        </style>
     </head>
-    <body>
-        <p>Clase del día 8/11/2023</p>
-        <h2>Etiqueta de separación HR</h2>
-        La etiqueta hr, es un elemento que nos permite definir distintas secciones en HTML.
-        <br>La etiqueta hr, tiene una serie de atributos que nos permite dar una cierta
-        <br>apariencia en HTML. Estos atributos son: <b>size</b> (grosor de la linea), 
-        <br><b>width</b> (% da tamaño de ancho/largo de la línea) y color.
-        <br>Ejemplo de HR con los atributos comentados:
-        <hr size="12px" width="75%" color="blue">
-        <h2>Etiqueta Preformateado (PRE) y Etiqueta CODE</h2>
-        La etiqueta pre, se utiliza para dar un formato preformateado a un texto.
-        <br>Ejemplo de texto preformateado en HTML con etiqueta pre:
-        <pre>
+    <body bgcolor="#F2E59C" align="inherit">
+        <p>Una página web es un texto con marcas</p>
+        <p>La marcas pemiten modificar la presentación del documento, incluir contenidos, crear hiperenlaces, añadir significado 
+            al texto etc.
+        </p>
+        <p> a las marcas se les llama etiquetas, para verlos desde los navegadores</p>
+        <p>Estas marcas se pueden visualizar en los navegadores con Ctrl+U</p>
+        <p>Las normas de la web estan definidas por la wwwConsortium o w3</p>
+        <p>html es aglutinar textos sonidos e imágenes y combinarlos y añadir hiperenlaces
+        Es un estandar de <b>visualización de información</b></p>
+        <h3>LAS ETIQUETAS</h3>
+        <p>Se escriben entre desigualdades, suelen ir por parejas y rodeando porciones de texto, Tienen una etiqueta de apertura 
+        y otra de cierre, la de apertura contiene al menos el nombre de la marca y el cierre comienza por "</loquesea>"
+        Hay casos en los que no son necesarios apertura y cierre, por ejemplo:</p>
+        <ul>
+            <li>imágenes</li>
+            <li>Saltos de linea</li>
+            <li>separadores</li>
+            <li>Se las conoce como marcas vacías img hr br etc.</li>
+        </ul>
+        <h3>Atributos</h3>
+        <em>Los atributos proporcionan información adicional sobre la etiqueta, todas <br>
+            las etiquetas pueden tener atributos (uno o más), siempre en la apertura, se <br>
+            representan mediante clave="valor"
+            <!-- <etiqueta atributo="valor del atributo" atributo2="valor del atributo"></etiqueta> -->
+        </em>
+        <h3>Tipos de atributos</h3>
+        <h4><b>Atributos básicos</b></h4>
+        <em>Se pueden usar en todas las etiquetas</em>
+        <p><b>id = "texto" </b>establece un identificador único a cada elemento dentro de una página web</p>
+        <p><b>class = "texto" </b>establece la clase css que se aplica a los estilos de elementos</p>
+        <p><b>style = "texto</b> estblece de forma directa los estilos css de un elemento </p>
+        <p><b>title = "texto"</b>establece el título a un elemento; mejora la accesibilidad y los navegadores lo muestran <br>
+        cuando el usuario pasa el ratón por encima del elemento</p>
+        <h4><b>Atributos para internacionalización</b></h4>
+        <em>Los usan las páginas que muestran sus contenidos en varios idiomas</em>
+        <p><b>lang = "código de idioma</b> indica el idioma mediante un código predefinido <br>
+        <b>xml:lang = "código de idioma"</b> indica el idioma del elemento mediante un código <br>
+        <b>dir = "/tr/rtl/auto"</b>indica la dirección del texto </p>
+        <h4>Atributos de eventos</h4>
+        <em>Solo se usan en web dinámicas con javascript</em>
+        <h4>Atributos de foco</h4>
+        <em>Relacionados con la accesibilidad de los sitios web</em>
+        <h4>Atributos globales </h4>
+        <em>En HTML, los atributos globales son atributos comunes a todos los elementos HTML. <br>
+             Se pueden utilizar para establecer propiedades o comportamientos de los elementos HTML, <br>
+             independientemente del elemento específico en el que se utilicen.</em>
+
+        <h2>La etiqueta Doctype</h2>
+        <ul>
+            <li>La declaración !Doctype debe ser la primera cosa en su documento html, antes de la etiqueta html</li>
+            <li>!doctype no es una etiqueta html es una instrucción para que el navegador web <br> sepa en que versión
+            de html está escrita la página</li>
+            <li>Hace referencia a una DTD porque se basaba en SGML. <br>
+            El DTD especifica las reglas para el lenguaje de marcado, de modo que los navegadores procesen el contenido <br>
+        correctamente. Ahora html no está basado en SGML por lo que no requiere una referencia a una DTD.</li>
+        </ul>
+        <h2>CABECERA head</h2>
+        <p>Incluye toda la info y los recursos necesarios para generar la página <br>
+            <b>base </b> define la URL usada en el navegador  <br>
+            <b>meta</b> representa los metadatos, como la descripción del documento, palabras clave, codificación de caracteres etc. <br>
+            <b>meta name="nombre de la propiedad" content = "valor de la propiedad"</b>
+            <h3>EJEMPLOS</h3>
+            <em><b>DEFINIR EL AUTOR</b> <br>meta name"author" content="Juan Perez" <br>
+            <b>DEFINIR EL PROGRAMA CON EL QUE SE HA CREADO</b> <br>meta name="generator" content="wordPress 2.8.5 <br>
+            <b> DEFINIR LA CODIFICACIÓN DE CARACTERES</b><br>meta http-equiv="content-type" content="text/html; charset=UTF-8" <br>
+            meta http-equiv="content-type" content="text/html; charset=UTF-8</em><br>
+            <em><b>Definir el copyright</b><br>
+            meta name="copyright" content="librosweb.es" <br>
+            <b>Definir el comportamiento de los buscadore</b> <br>
+            meta name="robots" content="index, follow" <br>
+            <b>Definir las palabras clave del documento</b><br>
+            meta name="keywords" content="diseño, css, hojas de estilos, web, html" <br>
+            <b>Definir una breve descripción</b><br>
+            meta name = "description" content="Artículos de diseño web, usabilidad y accesibilidad" <br>
+            <b>atributos: name =></b>  para decribir el tipo de metadata <br>
+            <b>content =></b> para especificar el valor <br>
+            <b>charset =></b> para declarar el tipo de codificación de caracteres a utilizar para procesar el contenido.
+            <b>link =></b> Este elemento especifica la relación entre el documento y un recurso externo <br>
+            (generalmente usado para cargar archivos CSS). <br>
+            El elemento puede incluir los atributos <b>href</b> para declarar la ubicación del recurso, <b>rel </b> para definir tip de relación<br>
+            <b>media </b> para especificar el medio al que el recurso está asociado. <br>
+            <b>type y sizes</b> para declarar el tipo de recurso y su tamaño <br>
+            <b>style</b> para declarar estilos CSS dentro del documento.
+            <b>script </b> para cargar o declarar código Javascript.</em>
+
+            <p>Clase del día 8/11/2023</p>
+            <h2>Etiqueta de separación HR</h2>
+            <p>La etiqueta hr, es un elemento que nos permite definir distintas secciones en HTML.
+            <br>La etiqueta hr, tiene una serie de atributos que nos permite dar una cierta
+            <br>apariencia en HTML. Estos atributos son: <b>size</b> (grosor de la linea), 
+            <br><b>width</b> (% da tamaño de ancho/largo de la línea) y color.
+            <br>Ejemplo de HR con los atributos comentados:
+            <hr size="12px" width="75%" color="blue">
+            <h2>Etiqueta Preformateado (PRE) y Etiqueta CODE</h2>
+            <p>La etiqueta pre, se utiliza para dar un formato preformateado a un texto.
+            <br>Ejemplo de texto preformateado en HTML con etiqueta pre:</p>
+        </p>
+        <pre><em>
             Ejemplo                 de              código          
                     Java         con        un          Hola        Mundo
             <code>
                 function diHola(){
-                    console.log('Hola amigxs de UNIR FP DAW/ASIR');
+                    console.log('Hola amigos de UNIR FP DAW/ASIR');
                     alert('Hola mundo');
                 }
             </code>
-            <hr size="20px" width="50%" color="yellow">
-        </pre>  
-        <h2>FORMATOS DE TEXTO</h2>
-        <b>etiqueta b (bold) para poner en negrita</b>
-        <br><i>Etiqueta i para italica </i>
-        <br><del>del para tachar</del>
-        <br><em>em para dar énfasis, como la i</em>
-        <br><small>small para hacer la letra un poco más pequeña</small>
-        <br>esto es un ejemplo de super indice 2<sup>2 </sup>
-        <br>Esto es un ejemplo de subíndice H<sub>2</sub>O
-        <br><mark>mark para subrayar texto </mark>
-        <br><cite>Esto es una cita: "Erase que se era un tremendo humano"</cite>
-        <br><h2>FORMATO DE TEXTO EN HTML</h2>
-        <br>En Html se puede aplicar formato al texto con la etiqueta font, <br>
-        con los siguientes atributos: <br>
-        <b>color</b><br>
-        <b>face</b> (Tipo de letra) y <b>size</b> (tamaño de letra en px) <br>
-        <b>EN HTML:5 YA NO SE USA</b>
-        <br> Ejemplo de como sería esto: <br>
-        <p aling="center">
-            <font face="Impact" size="22px" color="red"> Esto es un ejemplo de la tipografía font</font><br>
-            
-        </p>
+            <hr size="20px" width="50%" color="yellow"></em>
+        </pre> 
+        <p>Algunas etiquetas ya no se usan en html5 como:</p>
+        <ul>
+            <li><b>font </b> con sus atributos: </li>
+            <ol>
+                <li>face => tipo de letra</li>
+                <li>size => tamaño de letra </li>
+                <li>color => Color de la letra</li>
+            </ol>
+        </ul>
+        <font color="red" ><p>este texto esta coloreado con font</p></font>
+        <p>Alineación del texto:</p>
+            <ul >
+                <li >right</li>
+                <li>left</li>
+                <li>center</li>
+                <li>justify</li>
+                <li>inherit</li>
+            </ul>
     </body>
-</html>
+</html>        
