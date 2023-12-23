@@ -6,8 +6,9 @@
         <title>Imagenes en html</title>
     </head>
     <body>
+        <font color="red"><h1>SABERSE BIEN LOS TIPOS DE IMAGENES</h1></font>
         <p>Existen dos tipos de imágenes</p>
-        <dl>
+        <dt>
             <dt ><h3>1. imagenes de mapa de bits</h3></dt>
                 <dd>Estan formadas por puntos de colores <br> por ejemplo: <br>
                 los videojuegos de suoer mario</dd>
@@ -26,9 +27,110 @@
                 <ol><h2>Desventajas</h2>
                     <li>No permiten representar imagenes sin formas definidas, como si ocurre con las fotos</li>
                 </ol>
-               
+            </dt>
+       
         </dl>
-
-
+        <p>Formatos de imágenes vectoriales: <br>
+        .svg .eps .ai <br>
+        Formatos de imágenes de mapa de bits <br>
+        .bmp .jpeg .jpg .png .gif .tif .psd <br></p>
+        <ol>
+            <li><h2>JPG Y JPEG</h2></li>
+            <ul type="square">
+                <li>Adecuado para fotos</li>
+                <li>Compresión con pérdidas</li>
+                <li>Conserva el color original</li>
+                <li>16 millones de colores</li>
+                <li>Permite modo progresivo de aparición</li>
+                <li>No permite transparencias ni animaciones</li>
+            </ul>
+            <li><h2>GIF</h2></li>
+            <ul type="square">
+                <li>Adecuado para dibujos</li>
+                <li>Compresión sin perdidas</li>
+                <li>Usa el algoritmo LZW</li>
+                <li>256 colores</li>
+                <li>Permite transparencias</li>
+                <li>Permite animaciones</li>
+                <li>No degrada el color</li>
+                <li>Tiene derechos de autor</li>
+            </ul>
+            <li><h2>PNG</h2></li>
+            <ul type="square">
+                <li>Adecuado en general</li>
+                <li>Compresión sin pérdidas</li>
+                <li>Millones de colores</li>
+                <li>Permite transparencias</li>
+                <li>Permite metadatos</li>
+                <li>Es editable</li>
+                <li>Las fotos pesan más</li>
+                <li>No permite animaciones</li>
+            </ul>
+        </ol>
+        <h2>Insertar imágenes en html</h2>
+        <ul>
+            <li><b>img:</b> es una monoetiqueta, no tiene cierre que usamos para insertar imágenes</li>
+            <li>Atributo <b> src=""</b> nos ayuda a localizar la imagen </li>
+            <li>link de la imagen dirección /ubicación y el formato que tiene</li>
+            <li>Siempre hay que poner el formato</li>
+            <p> ejemplo: img src="img/deadpool.jpg" alt="Esto es para poner lo que es si se va la imagen"</p>
+        </ul>
+        <img src="img/deadpool.jpg" alt="Deadpool" width="500px" height="400px" border="3" usemap="">
+        <h2>Atributos de img</h2>
+        <ol>
+            <li><b>src: </b>Dirección o URI de la imagen</li>
+            <li><b>alt: </b>alternativo, lo que indica es un breve texto de la imagen en caso de que no se pueda cargar o no esté disponible</li>
+            <li><b>width y height </b>Sirven para dar un tamaño de ancho y alto, se suele medir en px </li>
+            <li><b>usemap:</b> para hacer mapeado de imagenes, como la foto de arriba de deadpool</li>
+            <li><b>title:</b>Para mostrar un tip con info sobre la imagen, cuando pasamos el raton sobre la foto</li>
+        </ol>
+        <h2>ETIQUETA PICTURE</h2>
+        <p>es una etiqueta HTML que se utiliza para representar una imagen o un grupo de imágenes. <br>
+             La etiqueta <picture> es una forma más eficiente de representar imágenes en HTML que la etiqueta <img> tradicional.</p>
+        <ol>
+            <li><b> src: </b>La URL de la imagen o el grupo de imágenes que se va a representar.</li>
+            <li>alt: El texto alternativo que se muestra cuando la imagen no se puede cargar.</li>
+            <li>sizes: Una lista de pares de ancho y altura que se utilizan para definir  <br> 
+                las dimensiones de la imagen o el grupo de imágenes en diferentes dispositivos.</li>
+            <li>imagesrcset: Una lista de pares de URL y anchos que se utilizan <br>
+                 para definir las imágenes que se van a mostrar en diferentes dispositivos.</li>
+        </ol>  
+        <p>La etiqueta <picture> se compone de una o más etiquetas <source>. La etiqueta <source> define una  <br>
+            imagen que se va a representar en un dispositivo específico.</p>      
+        <!--<picture>
+            <source src="imagen-grande.jpg" media="(min-width: 600px)">
+            <source src="imagen-mediana.jpg" media="(min-width: 300px)">
+            <source src="imagen-pequeña.jpg">
+          </picture> -->
+        <h2>La etiqueta figure</h2>
+        <p>Permite asociar un texto con una imagen, como si tuviera un pie de página.</p><br>
+        <p>Estructura: </p> <br>
+        <ul>
+            <li>La etiqueta figure, que es la padre</li>
+            <li>img: insertar la imagen</li>
+            <li>figcaption: es la tarjeta que contiene el texto asociado</li> 
+        </ul>
+        <figure>
+            <img src="img/spider-man-with-camera-marvel-wallpaper-scaled.jpg" alt="spiderman" width="500px" height="700" >
+            <figcaption><h2>Spiderman saca una foto a Wen <img src="img/Homer_Simpson_2006.png" alt="" width="48px" height="48px"></h2></figcaption>
+        </figure>
+        <h1>INSERTAR UN VIDEO DE YOUTUBE</h1>
+        <ol>
+            <li>Pincho en el video que quiero insertar </li>
+            <li>Con el botón derecho del ratón, copiar código de insercción</li>
+            <li></li>
+        </ol>
+        <iframe width="700px" height="500px" src="https://www.youtube.com/embed/BIgrHsmT1JU" title="Herramientas que TODO programador necesita 💻 (kit definitivo)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>INSERTAR UN DESTINO DE GOOGLE MAPS</h1>
+        <ol>
+            <li>Pincho en el lugar que quiera</li>
+            <li>Le das a compartir y dentro de este <br> 
+            insertar un mapa</li>
+            <li>Te descagas el código</li>
+        </ol>
+        <figure align="center">
+            <figcaption>Esta es mi casa</figcaption>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3073.8803338062194!2d-0.5278776238038384!3d39.607378071581074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd605c2a96d550e7%3A0x48092cb8d1bbc5a5!2sC.%20del%20Oro%2C%2011%2C%2046185%20La%20Pobla%20de%20Vallbona%2C%20Valencia!5e0!3m2!1ses!2ses!4v1703348298904!5m2!1ses!2ses" width="500px" height="300px" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>    
     </body>
 </html>
