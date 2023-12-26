@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-escale=1.0">
+        <title>TABLAS EN HTML</title>
+    </head>
+    <body>
+        <h1>Tablas en HTML</h1>
+        Una tabla es un conjunto de celdas donde podemos alojar distintos contenidos: imágenes,
+        <br>audio, vídeo, texto, etc.
+        <br>Antiguamente, era uno de los elementos fundamentales que utilizabamos para poder
+        <br>maquetar nuestras webs con el contenido que queríamos tener en ellos.
+        <br>Con la llegada de HTML5, se empezó a utilizar etiquetas semánticas (aside, nav, 
+        <br>header, etc) y contenedores divs, que nos permitía tener una mayor flexibilidad
+        <br> y adaptar nuestras webs de manera  mucho más dinámica y visualmente más atractivas.
+        <br>Las características o estructura que forman una tabla son principalmente las siguientes:
+        <ul>
+            <li><b>table:</b> es la que define la tabla. Tiene etiqueta de apertura y cierre.</li>
+            <li><b>tr:</b> es la que divide las filas de nuestra tabla. Tiene etiqueta de apertura y cierra</li>
+            <li><b>td:</b> es la que divide en celdas las finas de nuestra tabla. Tiene etiqueta de apertura y cierre</li>
+        </ul>
+        <br>Ejemplo de tabla de 2 filas por 2 columnas (celdas)
+        <br>
+        <table border="1px">
+            <tr>
+                <td>Nombre</td>
+                <td>Apellidos</td>
+            </tr>
+            <tr>
+                <td>Raúl</td>
+                <td>Rodríguez</td>
+            </tr>
+        </table>
+        <h3>PROPIEDADES Y ETIQUETAS DE UNA TABLA</h3>
+        <ul>
+            <li><b>table:</b> Define el inicio y el fín de una tabla</li>
+            <li><b>tr:</b>define la fila de una tabla, apertura y cierre</li>
+            <li><b>td:</b> define la columna o celda de una tabla, apertura y cierre</li>
+            <li><b>caption:</b>Se usa para colocar un titulo de una tabla</li>
+            <li>atributo <b>align=top/bottom</b> podemos poner el titulo encima o debajo de la tabla</li>
+            <li><b>thead:</b> define la cabecera de una tabla</li>
+            <li><b>tbody:</b>Define el contenido de una tabla</li>
+            <li><b>tfoot:</b> Define el contenido del footer</li>
+            <li><b>th:</b>Pone en negrita como un título</li>
+        </ul>   
+        <h3>COMBINACIÓN DE CELDAS EN TABLAS</h3>
+        <p> En las etiquetas td y th podemos combinarlas para hacer que sea más atractiva <br>
+        y para establecer una serie de características que necesitemos</p> <br>
+        <p>Usaremos las siguientes propiedades: <br></p>
+        <ul>
+            <li><b>colspan:</b>Indica el número de filas que ocupa</li>
+            <li><b>rowspan:</b>Indica el número de columnas que ocupa</li>
+        </ul>
+        <h3>EJEMPLO:</h3>
+        <table border="2px" align="center" width="200px" height="200px">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td rowspan="3">C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <td rowspan="3">G</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">M</td>
+                
+            </tr>
+        </table>
+    </body>
+
+</html>

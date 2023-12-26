@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-escale=1.0">
+        <title>Mapeado de imagenes en html</title>
+    </head>
+    <body>
+        <h1>MAPEADO DE IMÁGENES EN HTML 29/11/2023</h1>
+        <p>El mapeado hace referencia a la posibilidad de asignar una región de una foto o zona de una imagen <br>
+        para incrustarle un enlace</p>
+        <p>usaremos <b>map</b> y esta nos permitirá identificar zonas en imágenes para redireccionar dicha area <br>
+        a un link que queramos</p>
+        <h2>ESTRUCTURA</h2>
+        <ol>
+            <li><b>map:</b>vamos a usar y establecer el mapeado </li>
+            <li><b>name: </b> Es un atributo que se añade a la imagen que debde coincidir con el que <br>
+            hemos establecido en el usemap</li>
+            <li><b>usemap:</b> Un atributo que se añade en la imagen para indicar que vamos a usar el mapeado <br>
+            Se usa así: usemap=#el_nombre_que_sea</li>
+            <li><b>save:</b>Especificar la región que queremos mapear, existen 4 tipos: <br>
+            default, circle, rect y poly</li>
+            <li><b>default:</b> Es un atributo que indica que la región del mapeado es por defecto (En todo el documento)</li>
+            <li><b>rect: </b> Es un atributo que indica que la región es rectangular. Para poder establecer el area <br>
+            usaremos coordenadas por el punto x, y del vertice superior de la imagen y el punto x,y del vértice inferior derecho</li>
+            <li><b>circle: </b>Atributo indica que la región es circular, para establecerlo se toma un punto central <br>
+            x,y y se le asigna un valor del radio de la circunferencia</li>
+            <li><b>poly:</b>La región va a ser poligonal, se debe tomar por lo menos 3 o más puntos de coordenadas x,y <br>
+            y para establecer sus valores se seguirá el sentido de las agujas del reloj</li>
+            <li><b>coordenadas:</b> indican la posición en la pantalla del area a mapear.</li>
+        </ol>
+        <hr>
+        <img src="img/capiVSironman.png" alt="mapeado imagen" usemap="#marvel">
+        <map name="marvel">
+            <!-- <area shape="rect" coords="0,0,378,399" href="https://www.marvel.com/" alt="marvel" title="Marvel" target="_blank"> -->
+            <p>Como va esto, pinchamos en la parte superior izquierda, nos dará las primeras coordenadas x = 0, y = 0<br>
+            ahora trazamos una recta diagonal hasta donde queramos que llegue el cursor para pinchary miramos las coordenadas x1 = 378 y1 = 399 <br>
+            y colocamos las 4 en coords=""</p>
+            <!-- <area shape="rect" coords="379,0,748, 400" href="https://www.apple.com" alt="apple" title="Apple" target="_blank"> -->
+            <!-- Para el mapeado de circle hayq que hacer un circulo donde queramos, cabeza de ironman, 
+            y luego sacamos el punto medio, mas o menos, desde el punto medio trazamos el radio, en este caso, el punto
+            medio es 505 pues trazamos la linea y nos da 544 pues lo restamos de los 505 y nos da 39px y lo colocamos en coords:
+            505,96 que es el punto medio y ahora el radio 39  -->
+            <!-- <area shape="cirle" coords="505,100,39" href="https://www.marvel.com/" alt="deadpool" title="deadpool" target="_blank" > -->
+                <!--Mapeado del polígono Poly, necesito como mínimo 3 puntos de coordenadas y luego se establece estos puntos
+                en el sentido de las agujas del reloj, cojo el primer punto: x=496,y=163 x1=518, y1=157, x2=515 y2=174 
+                x3=501, y3=179   -->
+            <area shape="poly" coords="520,177,541,167,539,184,525,189" href="https://www.marvel.com/" alt="deadpool" title="deadpool" target="_blank" >
+        
+        </map>
+        <p>Si cambiamos el tamaño con witdh y height y queremos hacer el mapeado, guardamos la foto para trabajar <br>
+        con ella y le damos el ancho y largo que queramos para trabajar la imagen</p>
+        
+    </body>
+
+</html>

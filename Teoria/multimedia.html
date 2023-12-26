@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-escale=1.0">
+        <title>Videos e imágenes multimedia</title>
+    </head>
+    <body>
+        <h1>AUDIO Y VIDEO EN HTML5</h1>
+        <p>Existen etiquetas específicas para insertar archivos multimedia, tanto video como audio llevan etiquetas <br>
+        de apertura y cierre </p>
+        <h3>Atributos comunes audio y video</h3>
+        <ol>
+            <li><b>src:</b> Para vincular el archivo de audio o video a nuestra web</li>
+            <li><b>preload:</b>Usado para almacenar archivos de gran tamaño</li>
+            <li><b>mediagroup:</b> realizar la agrupacion de elementos multimedia, formatos varios</li>
+            <li><b>autoplay:</b> reproduce al inicio, depende del navegador funciona o no</li>
+            <li><b>loop:</b>Reproduce de manera infinita</li>
+            <li><b>muted:</b>silencia el audio</li>
+            <li><b>controls:</b>controles de nuestro reproductor multimedia</li>
+        </ol>
+        <h3>Atributos solo video</h3>
+        <ol>
+            <li>width y height</li>
+            <li><b>poster:</b>Insertar una imagen previa en el video</li>
+        </ol>
+        <p>Para poner un audio, la etiqueta audio src:"el audio" controls (esto te pone el reproductor en la página)</p>
+        <audio src="multimedia/audio.mp3" controls>este es el audio</audio> <hr>
+        <video src="multimedia/video.mp4" controls width="300px" height="300px" poster="img/deadpool.jpg">ACDC</video>
+        <p>para saber si una etiqueta x se puede usar para ciertos navegadores usamos: <br>
+        <a href="https://caniuse.com" target="_blank"><h1>Can I Use </h1></a></p>
+    </body>
+</html>
