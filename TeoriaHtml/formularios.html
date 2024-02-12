@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="width=device-width, initial-scale=1.0">
+        <title>FORMULARIOS EN HTML</title>
+    </head>
+    <body align="center">
+        <h1 align="center"><font face="verdana" >FORMULARIOS EN HTML</font></h1>
+        <p align="justify"><font face="verdana">Los formularios en HTML son elementos que permiten a los usuarios introducir 
+            datos en un sitio web. Estos datos se pueden enviar al servidor web para su 
+            procesamiento y almacenamiento, o se pueden utilizar en el lado del cliente para provocar 
+            de alguna manera una actualización inmediata de la interfaz de usuario.</font></p>
+            <br><br>
+        <table align="center">
+            <tr>
+                <td>
+                    <form action="/action_page.php" method="post" >
+                        <input type="text" name="nombre">
+                        <input type="submit" value="Enviar">
+                    </form>   
+                </td>
+            </tr>
+        </table>
+         <br><br>
+        <table align="center" border="2">
+            <tr >
+                <td>
+                    <ul type="square">
+                        <li>El elemento <b>form</b> define el inicio y el final del formulario.</li>
+                        <li>El atributo <b>action</b> especifica la URL de la página que procesará los datos del formulario. <br>
+                        En caso de de omitor la info de donde va, se enviaran los datos a la misma página actual, volviendola a cargar</li>
+                        <li>El atributo <b>method</b> especifica el método HTTP que se utilizará para enviar los datos.
+                            Los métodos más comunes son <b>post</b> y <b>get</b>. get se usa cuando los datos se envíen a la propia url, post en caso contrario.</li>
+                        <li><b>name</b> Es el nombre del formulario para hacerle referencia desde javascrip o el backend</li>
+                        <li>Los elementos de entrada (<b>input</b>, <b>textarea</b>, <b>select</b>, etc.) permiten a los usuarios 
+                            introducir datos en el formulario.</li>
+                        <li>Cada elemento de entrada tiene un atributo <b>name</b> que especifica el nombre del campo de datos.</li>
+                        <li>El elemento <b>submit</b> representa el botón de envío del formulario. </li>
+                        <li>Cuando el usuario hace clic en este botón, los datos del formulario se envían a la página especificada por el atributo <b>action</b>.</li>
+                        <li><b>enctype</b>Codificación para el envío del formulario, importante para el envío de archivos</li>
+                        <li><b>accept-charset</b>Fuerza a utilizar una codificación en los parámetros de texto del formulario</li>
+                        <li><b>autocomplete</b> on/of activa o desactiva el autocompletado</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td>
+                    <form action="/" method="post" >
+                        <input type="text" name="nombre">
+                        <input type="submit" value="Enviar">
+                    </form>   
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li><b>Información de texto</b> nombres, apellidos, direcciones... <b>input </b> o <b>textarea</b></li>
+            <li><b>Números o cantidades</b>Edades, precios... <b>input</b> para números</li>
+            <li><b>fechas u horas</b> fecha de nacimiento, inicios eventos... <b>input</b> para fechas</li>
+            <li><b>verdadero/falso</b>si/no, A/B, ON/OF... <b>input type="checkbox"</b></li>
+            <li><b>Opción única</b> Elegir una opción de dos o más <>input type="radio" > <b>select</b></li>
+            <li><b>Varias opciones</b>Elegir varias opciones <b>select multiple > input type="checkbox"</b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+        </ul>
+        <form name="formulario" method="get" action="http://127.0.01:8080">
+            <br>
+                Entrada de Texto: <input type="text">
+                <br> Texto de Busqueda <input type="search" name="" id="" required>
+                <br> Introdu número de telefono <input type="tel" name="" id="" required>
+                <br> Introducir Dirección URL <input type="url" name="" id="">
+                <br> Introducir Dirección de Correo: <input type="email" name="" id="" required>
+                <br> Introducir Password: <input type="password" name="" id="">
+                <br>Opinión Sobre la materia de Lenguaje de Marcas
+                <br><textarea name="opiniones alumnos" id="" cols="30" rows="10" minlength="5" maxlength="240" 
+                  placeholder="Escribe aquí la opinión sobre la materia..."></textarea>
+                <br><input type="submit" value="Registro">
+        </form>
+    </body>
+</html>
