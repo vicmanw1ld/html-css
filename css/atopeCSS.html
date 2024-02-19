@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        CSS Nivel Inicial
+1. Sintaxis selector
+Sintaxis CSS
+2. Selectores básicos
+Selector	Descripción
+*	Selecciona todos los elementos del DOM
+etiqueta	Selecciona todas las etiquetas indicadas
+.class	Selección de los elementos con la clase .class
+#id	Selección del elemento con id #id
+sel1 sel2	Selección de los selectores sel2 que se encuentren dentro de los selectores sel1
+.class1.class2	Selección de los elementos con las dos clases: class1 y class2
+sel1.class1	Selección de todos los selectores sel1 con clase class1
+sel1, sel2	Selección de todos los selectores separados por comas
+sel1 > sel2	Selección de los selectores sel2 cuando son hijos de sel1
+sel1 + sel2	Selección del selector sel2 cuando es hermano de sel1 (su elemento padre es el mismo)
+Tabla 1. Tipos de selectores. Selectores básicos
+Ver más →
+
+3. Unidades de medida
+Longitudes relativas
+px	Píxeles (relativo al dispositivo)
+em	Relativo al tamaño de la fuente del elemento ( 2em significa 2 veces el tamaño de la fuente actual)
+%	Porcentaje (relativo al elemento padre)
+vh y vw	Medidas relativas de acuerdo al viewport
+1vh = 1% de la altura del viewport
+100vh = altura del viewport
+Longitudes absolutas
+in	Pulgadas (1pulgada = 2.54 cm)
+cm	Centímetros
+mm	Milímetros
+pt	Puntos (1pt = 1/72 pulgadas)
+pc	Picas (1pica = 12 puntos)
+Tabla 2. Unidades de medida
+Ver más →
+
+4. Colores básicos
+Tabla 3: Colores básicos
+Colores básicos
+Color	Nombre	HEX	RGB
+black	#000000	0,0,0
+white	#ffffff	255,255,255
+red	#ff0000	255,0,0
+blue	#0000ff	0,0,255
+yellow	#ffff00	255,255,0
+gray	#808080	128,128,128
+green	#008000	0,128,0
+Ver lista completa de colores expresados por nombre, hexadecimal y en RGB
+5. Color y fondo
+Propiedad	Descripción	Valores
+color	Color del texto	RGB | HSL | HEX | nombre del color | RGBA | HSLA
+background-color	Color de fondo	RGB | HSL | HEX | nombre del color | RGBA | HSLA
+background-image	Imagen de fondo	url(«…») | none
+background-repeat	Repetición de la imagen de fondo	repeat | repeat-x | repeat-y | no-repeat
+background-attachment	Desplazamiento de la imagen de fondo	scroll | fixed
+background-position	Posición de la imagen de fondo	percentage | length | left | center | right
+background-size	Tamaño de la imagen de fondo	auto | cover | contain | valor
+Opacity	Transparencia de un elemento	[ 0 – 1 ] (0 → totalmente transparente)
+Tabla 4. Colores y fondo
+Ver más →
+
+6. Texto
+Propiedad	Descripción	Valores
+text-indent	Desplazamiento de la primera línea del texto	longitud | porcentaje
+text-align	Alineamiento del texto	left | right | center | justify
+text-decoration	Efectos de subrayado y tachado	none | underline | overline | line-through
+letter-spacing	Espacio entre caracteres	normal | longitud
+word-spacing	Espacio entre palabras	normal | longitud
+text-transform	Transformación a mayúsculas / minúsculas	capitalize | uppercase | lowercase | none
+line-height	Tamaño del espacio entre líneas	longitud | porcentaje
+vertical-align	Alineación vertical	top | middle | bottom
+baseline | sub | super | valor
+Tabla 5. Propiedades de los textos
+Ver más →
+
+7. Fuentes
+Propiedad	Descripción	Valores
+font-family	Familias de fuentes	nombre-familia|nombre-familia-genérica| *
+font-style	Estilo de la fuente	normal | italic | oblique
+font-variant	Convierte a mayúsculas manteniendo un tamaño inferior	normal | small-caps
+font-weight	Anchura de los caracteres. Normal = 400, Negrita = 700	normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+font-size	Tamaño de la fuente	xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | longitud | porcentaje
+Tabla 6. Propiedades de las fuentes
+Ver más →
+
+8. Listas
+Propiedad	Descripción	Valores
+list-style-type	Estilo aplicable a los marcadores visuales de las listas	disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none
+list-style-image	Imagen aplicable a los elementos de las listas	url(«…») | none
+list-style-position	Posición dentro de la lista de los elementos marcadores de las listas	inside | outside
+list-style	Permite establecer el estilo de la lista, la imagen y/o la posición	list-style-type | list-style-position | list-style-image
+Tabla 7. Propiedades de las listas
+Ver más →
+
+9. Tablas
+Propiedad	Descripción	Valores
+caption-side	Posición del título respecto la tabla	top | bottom
+table-layout	Formato de las celdas, filas y columnas	auto | fixed
+border-collapse	Selección del modelo de los bordes	collapse | separate
+border-spacing	Espaciado entre los bordes de celdas adyacentes	longitud
+empty-cells	Visibilidad de los bordes de celdas sin contenido	show | hide
+Tabla 8. Propiedades de las tablas
+Ver más →
+
+10. Pseudo-clases para selección de hijos o hermanos
+Pseudo-clase	Descripción
+:first-child	Primer hijo
+:last-child	Último hijo
+:first-of-type	Primer hermano de su tipo
+:last-of-type	Último hermano de su tipo
+:only-child	Hijos únicos
+:only-of-type	Únicos hermanos de su tipo
+:empty	Elementos que no tienen hijos
+:nth-child(n)	Enésimo elemento hijo
+:nth-last-child(n)	Enésimo elemento hijo contando desde el último
+:nth-of-type(n)	Enésimo hermano de su tipo
+:nth-last-of-type(n)	Enésimo hermano de su tipo comenzando desde el último
+Tabla 9. Pseudo-clases para la selección de hijos o hermanos
+Ver más →
+
+11. Pseudo-clases para los estados de un elemento
+Pseudo-clase	Descripción
+:link	No visitado por el usuario
+:visited	Visitado por el usuario
+:hover	Modifica el estilo cuando un elemento apuntador pasa por encima
+:active	Se activa cuando el usuario pulsa el elemento
+:focus	Se activa cuando tiene el foco sobre el elemento
+Tabla 10. Pseudo-clases para los estados de un elemento
+Ver más →
+
+12. Pseudo-elementos
+Pseudo-clase	Descripción
+::first-line	Primera línea de texto de un elemento
+::first-letter	Primera letra de la primera línea de texto de un elemento
+::before	Añade contenido al principio del documento
+::after	Añade contenido al final del documento
+Tabla 11. Pseudo-elementos
+Ver más →
+
+13. Prefijos para los navegadores
+Prefijo	Navegador
+-moz-	Firefox
+-webkit-	Safari y Chrome
+-o-	Opera
+-khtml-	Konqueror
+-ms-	Internet Explorer
+-chrome-	Google Chrome
+Tabla 11. Prefijos para los navegadores
+Ver más →
+
+14. Modelo de cajas: márgenes, relleno y bordes
+Propiedades CSS contenedores
+Propiedad	Descripción	Valores
+padding-top padding-right 
+padding-bottom padding-left	Tamaño del relleno superior, derecho, inferior e izquierdo	longitud | porcentaje
+padding	Tamaño del relleno	longitud | porcentaje {1,4}
+margin-top margin-right 
+margin-bottom margin-left	Tamaño del margen superior, derecho, inferior e izquierdo	longitud | porcentaje | auto
+margin	Ancho de los margenes	longitud | porcentaje | auto {1,4}
+border-top-width border-right-width 
+border-bottom-width border-left-width	Anchura del borde superior, derecho, inferior o izquierdo	thin | medium | thick | longitud
+border-width	Anchura del borde	thin | medium | thick | longitud {1,4}
+border-top-color border-right-color 
+border-bottom-color border-left-color	Color del borde superior, derecho, inferior e izquierdo	color | transparent
+border-color	Color del borde	color | transparent {1,4}
+border-top-style border-right-style 
+border-bottom-style border-left-style	Estilo del borde superior, derecho, inferior e izquierdo	none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
+border-style	Estilo del borde	none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset {1,4}
+border-top border-right 
+border-bottom border-left	Ancho, estilo y color para el borde superior, derecho, inferior e izquierdo	border-top-width | border-top-style | border-top-color
+border	Ancho, estilo y color para los bordes	border-width | border-style | border-color
+border-radius	Curvatura del borde	longitud | porcentaje {1,4}
+Tabla 12. Modelo de cajas: márgenes, relleno y bordes
+Ver más →
+
+15. Comportamiento de los contenedores
+Propiedad	Descripción	Valores
+display	Comportamiento del contenedor	inline | block | inline-block | none
+position	Esquema de posicionamiento	static | relative | absolute | fixed
+top right bottom left	Desplazamiento de la caja respecto al borde superior, derecho, inferior o izquierdo	longitud | porcentaje | auto
+float	Posicionamiento flotante	left | right | none
+clear	Control de cajas adyacentes a las float	none | left | right | both
+z-index	Nivel de la capa	auto | número entero
+box-sizing	Control de bordes y relleno en el comportamiento del contenedor	content-box | border-box
+visibility	Muestra u oculta un elemento ocupando el espacio	visible | hidden
+overflow	Visibilidad de los elementos de tipo bloque	visible|hidden|scroll|auto
+Tabla 13. Comportamiento de los contenedores
+Ver más →
+
+Propiedad Z-index
+16. Tamaño de los elementos
+Nombre propiedad	Descripción	Valores
+width	Establece el ancho del área de contenido de un elemento	Unidad de longitud (px, em, %, etc.), auto, initial, inherit
+height	Establece el alto del área de contenido de un elemento	Unidad de longitud (px, em, %, etc.), auto, initial, inherit
+max-width	Establece el ancho máximo que puede tener un elemento	Unidad de longitud (px, em, %, etc.), none, initial, inherit
+min-width	Establece el ancho mínimo que debe tener un elemento	Unidad de longitud (px, em, %, etc.), 0, initial, inherit
+Tabla 14. Tamaño de los elementos
+Ver más →
+
+CSS Nivel Intermedio
+17. Propiedades personalizadas
+:root {
+  --principal-color: black; /* Valor personalizado */
+  --font: "Arial";
+}
+.clase {
+  background-color: var(--principal-color);
+  font-family: var(--font);
+}
+Ver más →
+
+18. Funciones matemáticas en CSS
+Función	Descripción	Valores Ejemplo
+abs()	Devuelve el valor absoluto de un número	abs(-10) = 10
+sin()	Devuelve el seno de un ángulo	sin(45deg) ≈ 0.71
+cos()	Devuelve el coseno de un ángulo	cos(60deg) = 0.5
+tan()	Devuelve la tangente de un ángulo	tan(30deg) ≈ 0.58
+sqrt()	Devuelve la raíz cuadrada de un número	sqrt(16) = 4
+pow()	Eleva un número a una potencia	pow(2, 3) = 8
+min()	Devuelve el valor mínimo entre dos números	min(10, 5) = 5
+max()	Devuelve el valor máximo entre dos números	max(10, 5) = 10
+random()	Devuelve un número aleatorio entre 0 y 1	random() ≈ 0.35
+floor()	Devuelve el valor entero menor o igual	floor(3.8) = 3
+ceil()	Devuelve el valor entero mayor o igual	ceil(3.2) = 4
+round()	Devuelve el valor redondeado al entero más cercano	round(3.7) = 4
+clamp()	Limita un valor dentro de un rango	clamp(10, 5, 8) = 8
+calc()	Realiza cálculos matemáticos en propiedades CSS	width: calc(100% - 20px)
+attr()	Obtiene el valor de un atributo HTML y lo utiliza en CSS	content: attr(data-text)
+Tabla 15. Funciones matemáticas en CSS
+Ver más →
+
+19. Cursores: propiedad cursor
+Valor cursor	Descripción
+crosshair	Cursor tipo cruz para tareas en las que se requiere precisión.
+help	Interrogación. Cursor de ayuda.
+move	Flechas hacia todos lados. Cursor para mover elementos.
+pointer	Mano o apuntador. Cursor para hacer clic.
+progress	Barra progreso o similar. Cursor que indica que se está trabajando en segundo plano.
+text	Cursor que permite seleccionar texto.
+wait	Cursor que indica que se debe esperar.
+vertical-text	Flecha vertical, utilizado para texto en orientación vertical.
+alias	Flecha diagonal, utilizado para indicar que se puede acceder a un enlace o recurso externo.
+no-drop	Círculo con una línea diagonal, utilizado para indicar que no se permite soltar el elemento arrastrado.
+grab	Mano cerrada, utilizado para indicar que el elemento se puede agarrar
+grabbing	Mano abierta, utilizado para indicar que el elemento está siendo arrastrado o agarrado.
+zoom-in	Símbolo de lupa con un signo de más, utilizado para indicar que se puede hacer zoom in.
+zoom-out	Símbolo de lupa con un signo de menos, utilizado para indicar que se puede hacer zoom out.
+not-allowed	Círculo con una línea diagonal, utilizado para indicar que la interacción no está permitida.
+cell	Cursor tipo cruz, utilizado en hojas de cálculo para ajustar celdas.
+copy	Puntero con un símbolo de copia, utilizado para indicar que se puede realizar una copia de un elemento.
+ew-resize	Flecha bidireccional horizontal, utilizado para indicar que se puede ajustar el tamaño horizontalmente.
+ns-resize	Flecha bidireccional vertical, utilizado para indicar que se puede ajustar el tamaño verticalmente.
+nwse-resize	Flecha bidireccional diagonal, utilizado para indicar que se puede ajustar el tamaño diagonalmente en dirección noroeste-sureste.
+nesw-resize	Flecha bidireccional diagonal, utilizado para indicar que se puede ajustar el tamaño diagonalmente en dirección noreste-suroeste.
+col-resize	Flecha bidireccional horizontal con una línea vertical, utilizado para indicar que se puede ajustar el tamaño de una columna.
+row-resize	Flecha bidireccional vertical con una línea horizontal, utilizado para indicar que se puede ajustar el tamaño de una fila.
+context-menu	Puntero con un símbolo de menú, utilizado para indicar que se puede abrir un menú contextual.
+none	No se muestra ningún cursor.
+Personalized	Imagen o valor personalizado en el cursor.
+Tabla 16. Tipos de cursores CSS
+Ver más →
+
+20. Formatos de las fuentes
+Formato	Descripción
+EOT	Embedded OpenType, Explorer
+TTF	TrueType Font, IOS
+WOFF	Web Open Font Format, Chrome
+WOFF2	Mejora de WOFF
+SVG	Scalar Vector Graphics
+Tabla 17. Formatos de las fuentes en CSS
+Ver más →
+
+21. Sombras CSS
+Propiedad	Valores	Ejemplo
+text-shadow	posx posy desenfoque color | none	text-shadow: 2px 2px 5px red;
+box-shadow	posx posy desenfoque posición color inset | none	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+Tabla 18. Sombras
+Ver más →
+
+22. Gradientes CSS
+Propiedad	Valores	Ejemplo
+background	linear-gradient(dirección{to top, to bottom, to left y to right}|ángulo, color, color, color…)	background: linear-gradient(to right, red, orange);
+background	linear-gradient(dirección{to top, to bottom, to left y to right}|ángulo, color posición, color posición, color posición…)	background: linear-gradient(to right, red 20%, orange 40%);
+background	linear-gradient(color, color, color…)	background: linear-gradient(red, orange);
+background	radial-gradient(forma{circle y ellipse}, color, color, color…)	background: radial-gradient(circle, red, orange);
+background	radial-gradient(forma{circle y ellipse} posición, color, color, color…)	background: radial-gradient(circle closest-side, red, orange);
+background	radial-gradient(forma{circle y ellipse}, color posición, color posición, color posición…)	background: radial-gradient(circle at top left, red 20%, orange 40%);
+background	radial-gradient(color, color, color…)	background: radial-gradient(red, orange, blue);
+Tabla 19. Gradientes
+Ver más →
+
+23. Selector de atributos CSS
+Selector	Descripción
+[nombre_atributo]	Selecciona los elementos que tienen establecido el atributo llamado nombre_atributo independientemente de su valor
+[nombre_atributo=valor]	Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo con un valor igual a valor
+[nombre_atributo~=valor]	Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y al menos uno de los valores del atributo es valor
+[nombre_atributo|=valor]	Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo, cuyo valor es una lista de valores, donde alguno comienza por valor
+[nombre_atributo$=valor]	Selecciona aquellas etiquetas cuyo atributo acabe en ese valor
+[nombre_atributo^=valor]	Selecciona aquellas etiquetas cuyo atributo comience por ese valor
+Tabla 20. Selector de atributos
+Ver más →
+
+24. Transiciones CSS
+transition:[propiedad a modificar] [Duración] [Tipo de animación] [Retardo];
+*Propiedad a modificar: background-color
+, border
+, border-radius
+, color...
+*Tipo de animación: linear, ease, ease-in, ease-out y ease-in-out.
+Ver más →
+
+25. Transformaciones CSS
+Propiedad	Descripción	Ejemplo
+Scale	Se establece con uno o dos valores, que representan la cantidad de escala que se aplica en cada dirección: scale(x) o scale(x,y). Cuando el valor está fuera del rango [-1, 1], el elemento crece a lo largo de esa dimensión. Cuando está dentro del rango el elemento se encoge.	transform: scale(0.5)
+Translate	Cambia la posición del elemento hacia la izquierda, derecha, arriba o abajo. La función translate() se establece con uno o dos valores: translate(x) o translate(x,y). Sus valores pueden estar definidos en píxeles, porcentajes,…	transform: translate(10px)
+Rotate	Gira o rota los elementos en grados: rotate(v).	transform: rotate(45deg)
+Skew	Distorsiona los elementos según el ángulo en grados. La función skew() se establece con uno o dos valores: skew(x) o skew(x,y).	transform: skew(45deg)
+Matrix	Mueve o transforma los elementos con precisión de píxel. La función matrix() se establece con seis valores numéricos: matrix(a,b,c,d,x,y). Los dos últimos valores representan la translación y los primeros la transformación lineal.	transform: matrix(0.5, 0.1, 0.5, 1, 10, -2)
+Tabla 21. Transformaciones CSS
+La propiedad transform se usa junto con la propiedad transition. Ejemplo:
+
+.caja1{
+   -webkit-transition: 1s linear;
+   transition: 1s linear;
+}
+.caja1:hover{
+   -webkit-transform: scale(.5);
+   transform: scale(.5);
+}
+Ver más →
+
+26. Filtros CSS
+Función	Descripción
+blur()	Aplica un desenfoque gaussiano a la imagen de entrada
+brightness()	Aplica un multiplicador lineal a la imagen de entrada, haciéndola parecer más o menos brillante
+contrast()	Ajusta el contraste de la imagen de entrada
+grayscale()	Convierte la imagen en escala de grises
+hue-rotate()	Aplica una rotación de tono
+invert()	Invierte los colores de la imagen de entrada
+opacity()	Ajusta la opacidad de la imagen de entrada
+saturate()	Satura la imagen de entrada
+sepia()	Convierte la imagen en sepia
+Tabla 22. Filtros CSS
+Ejemplo:
+
+<img src="imagen.jpg" alt="Imagen" class="filtro-desenfoque">
+.filtro-desenfoque {
+    filter: blur(5px);
+}
+Ver más →
+
+¡Enhorabuena por llegar hasta aquí! Esperamos que te haya resultado interesante este recopilatorio de CSS y que hayas aprendido las bases fundamentales para dar estilo a tus páginas web. Sin embargo, ¡esto es solo el comienzo!
+
+Si ya has aprendido los conceptos básicos te invitamos a continuar con el tutorial de CSS avanzado. En esta siguiente etapa, exploraremos técnicas y efectos más sofisticados. El CSS avanzado te permitirá dominar aspectos como media queries, flexbox y layouts más complejos entre otras funcionalidades.
+    </p>
+</body>
+</html>
