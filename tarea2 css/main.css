@@ -1,0 +1,68 @@
+body{
+    background-image: url(breaking\ bad/fondo.jpg);
+    background-size:cover ;
+    color:whitesmoke;
+    font-family: Breaking B Normal;
+    font-size:large;
+    margin: 0;
+    text-align: center;
+    
+
+}
+
+#logoBr {
+    background-image: url(./breaking\ bad/logo.png);
+    background-repeat:no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+
+}
+#poster{
+    margin: auto;
+    width: 700px;
+    height: 300px;
+    background-image: url(./breaking\ bad/poster.jpg);
+    background-size:cover ;
+    border: 10px outset brown;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/* tabla periodica */
+
+.bodyTable{
+    background-color: #0c3e11;
+    font-size:larger;
+    text-align: center;
+    color: black;
+    font-weight:bolder;
+}
+#tableLements{
+    background-color: black;
+    margin: auto;
+}
+td{
+    width: 80px;
+    height: 50px;
+}
+
+/* tabla 2 */
+
+#tabla2{
+    background-color: black;
+    margin: auto;
+    
+    /* Quitar luego la letra blanca */
+    color: aliceblue; 
+
+}
+
+#tr1{
+    
+    background-color: green;
+}
