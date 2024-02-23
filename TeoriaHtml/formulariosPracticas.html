@@ -6,7 +6,7 @@
         <title>Precticas de formularios</title>
     </head>
     <body>
-        <h1>FORM ACTION</h1>
+        <h1>FORM ACTION ATRIBUTOS</h1>
         <ul>
             <li><b>action</b>: indica la url, bbdd, mail etc que quieras enviar el form</li>
             <li><b>method</b>: get o post, get muestra la info escrita, post no la muestra, se envia por http/https</li>
@@ -16,13 +16,76 @@
             <li><b>autocomplete</b>: on y of para autocompletar</li>
         </ul>
         <br><br>
-
-        <form name="formulario" method="get" action="http://127.0.0.1:8080" >
-            Nombre alumno <input type="text" name="alumno" id="lo que sea es para css">
-            <input type="submit" value="registro">
-                Zºªªº
+        <ul>
+            <li>el input no lleva cierre</li>
+            <li>Entrada de texto input type="text"</li>
+            <li>Texto de Busqueda input type="search" name="" id=""</li>
+            <li>Introducir número de telefono input type="tel" name="" id=""</li>
+            <li>Introducir Dirección URL input type="url" name="" id=""</li>
+            <li>Introducir Dirección de Correo: input type="email" name="" id="" required</li>
+            <li>Introducir Password: input type="password" name="" id=""</li>
+            <li>opiniones o comentarios textarea name="opiniones alumnos" id="" cols="30" rows="10" minlength="5" 
+                maxlength="240" placeholder="Escribe aquí la opinión sobre la materia..."textarea</li>
+                <li>boton input type="submit" value="Registro"</li>
+        </ul>
+    
+        <form name="Form" method="post" target="_blank" autocomplete="on" action="http://localhost:5000/TeoriaHtml/formulariosPracticas.html">
+            Entrada de texto Nombre <input type="text"> 
+            <br><br>
+            Búsqueda <input type="search" name="buca algo" id="">
+            <br><br>
+            telefono <input type="tel" name="telefono" id="" maxlength="9">
+            <br><br>
+            direccion URL <input type="url" name="" id="">
+            <br><br>
+            email <input type="email" name="email" id="" required>
+            <br><br>
+            usuario <input type="text" name="" id="">
+            <br><br>
+            password <input type="password" name="" id="">
+            <br><br>
+            <!-- cols especifica el ancho en carasteres y rows el alto en caracteres minleght es el minimo de caracteres a escribir 
+            y maxlenght hasta 240 caracteres-->
+            comentarios <textarea name="Opiniones" id="" cols="30" rows="10" minlength="10" maxlenght="240"
+            placeholder="Escribe aquí tus comentarios"></textarea>
+            <br><br>
+            <input type="submit" name="" id="" value="Aceptar">
         </form>
-
+        <form name="formulario" method="post" action="https://dam.es">
+            <!-- Ejemplo input type = numer: Número entre 10 y 50, de 5 en 5. Valor por defecto: 25 -->
+            <input type="number" name="numero" id="" value="25" min="10" max="50" step="5">
+            <br>
+            <!-- Su misma versión, utilizando el slider en rango numérico -->
+            <input type="range" name="numrango" id="" value="25" min="10" max="50" step="5">
+        </form>
+        <ul>
+            <li><b>Fecha:</b> Utilizamos el input = date</li>
+            <li><b>Hora:</b> Utilizaremos el input = time</li>
+            <li><b>Fecha y hora local</b>Utilizaremos el input = datetime-local</li>
+            <li><b>Mes</b>Utilizaremos el input = month</li>
+            <li><b>Semana</b>Utilizaremos el input = week</li>
+        </ul>
+        <form action="http://hjola.es">
+            fecha <input type="date"> <br>
+            hora <input type="time" name="" id="" placeholder="hora"> <br>
+            fecha y hora local <input type="datetime-local" name="fecha y hora" id=""> <br>
+            mes <input type="month" name="" id="" placeholder="mes"> <br>
+            semana <input type="week" name="" id="" placeholder="semana">
+        </form>
+        <h1>Campos de Entrada de Información con controles: Casillas y Botones</h1>
+        <ul>
+            <li>Casillas de Verificación (activado o desactivado): input type = checkbox</li>
+            <li>Botones de radio (botones de selección única): input type = radio</li>
+        </ul>
+        <form action="wwww" name="radio botones" method="post" autocomplete="on" target="_blank">
+            Seleccione Titulación que está Estudiando Actualmente:
+        <br><input type="radio" name="FP" id="" value="ASIR">ASIR
+        <br><input type="radio" name="FP" id="" value="DAM">DAM
+        <br><input type="radio" name="FP" id="" value="DAW">DAW
+            sexo <br><input type="checkbox" name="sexo" checked>Masculino
+            <br>
+            <input type="checkbox" name="sexo" checked> Femenino
+        </form>
 
     </body>
 
